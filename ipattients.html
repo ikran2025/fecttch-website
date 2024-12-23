@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+        .my{
+            background-color:#008e80;
+        }
+        .btn{
+            background-color:#008e80 ;
+            outline: 0;
+            padding: 10PX;
+            font-size: 17px;
+            color: white;
+        }
+        .card1{
+          background-color: #008e80;
+        }
+        .card2{
+            background-color: #008e80;
+            opacity: 20%;
+        }
+      
+        .text{
+            font-size: 30px;
+            color: white !important;
+        }
+        .myheader{
+            background-color: gray;
+            opacity: 20%;
+        }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+        button{
+            background-color: #008e80;
+            padding: 10px;
+            color: white;
+            outline: 0;
+            border: 1px solid  #008e80;
+        }
+       
+    </style>
+   
+</head>
+<body >
+    <div class="d-flex">
+        <div class="my vh-100"  style="width: 230px">
+        <div class="mx-auto">
+            <img class="w-100" src="logo.jpg">
+        </div>
+        <button class="btn px-4">
+            <i class="fa-solid fa-circle-user text-white px-2"></i>
+            Dashboard
+        </button>
+        <button class="btn px-4">
+            <i class="fa-solid fa-pen-to-square px-2"></i>
+            <a href="/ipattients.html">pattients</a>
+        </button>
+        <button class="btn px-4">
+            <i class="fa-solid fa-user-doctor px-2"></i>
+            Doctors
+        </button>
+        <button class="btn px-4">
+            <i class="fa-brands fa-servicestack px-2"></i>
+            services
+        </button>
+        <button class="btn px-4">
+            <i class="fa-solid fa-flag px-2"></i>
+            receniption
+        </button>
+        <button class="btn px-4">
+            <i class="fa-solid fa-money-check-dollar px-2"></i>
+             Expenses
+        </button>
+        <button class="btn px-4">
+            <i class="fa-regular fa-user px-2"></i>
+          users
+        </button>
+        <button class="btn px-4">
+            <i class="fa-solid fa-flag px-2"></i>
+            receniption
+        </button>
+ 
+       
+          
+            <!--side bar-->
+        </div>
+        <div  class=" w-100">
+            <div class="myheader">
+             <div class="d-flex justify-contect-end">
+            <p class="text-danger">ttttttrrrr</p>
+             </div>
+                        <!--my header-->
+                    </div>
+          <div class="m-4">
+
+<div class="d-flex justify-content-end mx-5 mt-4">
+    <button data-bs-toggle="modal" data-bs-target="#exampleModal">Add pattient</button>
+</div>
+      
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">patient form</h5>
+          
+
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <input type="text" placeholder=" enter name" class="form-control mb-3">
+                <input type="text" placeholder=" enter name" class="form-control mb-3">
+                <input type="text" placeholder=" enter name" class="form-control mb-3">
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>x
+        </div>
+      </div>
+    </div>
+  </div>    
+       <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>Address</th>
+                <th>phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ikran abdi</td>
+                <td>hodan</td>
+                <td>09875433</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ikran abdi</td>
+                <td>hodan</td>
+                <td>09875433</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ikran abdi</td>
+                <td>hodan</td>
+                <td>09875433</td>
+            </tr>
+        </tbody>
+       </table>    
+          </div>
+        </div>
+    </div>
+
+
+
+
+                
+
+               
+      <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
